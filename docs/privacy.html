@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Videobot — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 42rem; margin: 3rem auto; padding: 0 1.25rem; font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.1rem; margin-top: 2rem; }
+  .updated { color: #666; font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<h1>Videobot — Privacy Policy</h1>
+<p class="updated">Last updated: 2026-09-07</p>
+
+<p>Videobot is a local desktop application for macOS that turns long-form podcast video
+into short highlight clips. This policy covers Videobot itself, including its optional
+feature for connecting a TikTok or Instagram account to publish exported clips.</p>
+
+<h2>What stays on your device</h2>
+<p>All video and audio processing happens locally on your Mac. Videobot does not upload
+your source recordings, transcripts, or exported clips to any server we operate, and we
+do not have access to them.</p>
+
+<h2>Social account connections</h2>
+<p>If you choose to connect a TikTok or Instagram account:</p>
+<ul>
+  <li>OAuth tokens are stored in the macOS Keychain, not in a plaintext file, and never
+  leave your device except in direct calls you initiate to TikTok's or Meta's own
+  servers to publish a clip you selected.</li>
+  <li>Non-sensitive account metadata (platform, display name, avatar URL, connection
+  timestamp) is stored in a local SQLite database on your device.</li>
+  <li>Disconnecting an account deletes both the Keychain item and the local database
+  record immediately.</li>
+</ul>
+
+<h2>What we don't collect</h2>
+<p>Videobot does not include analytics, telemetry, crash reporting, or any other
+tracking that sends data about your usage to us or to a third party.</p>
+
+<h2>Third parties</h2>
+<p>The only outside services Videobot talks to are the ones you explicitly connect to
+(TikTok's and Meta's/Instagram's own APIs), and only to perform the action you request
+(publishing or scheduling a clip). Each platform's own privacy policy governs how they
+handle data you send them directly.</p>
+
+<h2>Removing your data</h2>
+<p>Disconnecting a social account removes its stored token and metadata immediately.
+Uninstalling Videobot removes all locally stored application data, including its
+databases and any cached exports, from your device.</p>
+
+<h2>Questions</h2>
+<p>Open an issue at
+<a href="https://github.com/charlienovember/videobot-releases/issues">github.com/charlienovember/videobot-releases</a>
+with any privacy questions.</p>
+</body>
+</html>
